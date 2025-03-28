@@ -54,7 +54,7 @@ def upload_file():
         filepath = os.path.join(app.config["UPLOAD_FOLDER"], filename)
         file.save(filepath)
         # สร้าง URL สำหรับเข้าถึงไฟล์
-        file_url = f"https://cuddly-space-lamp-jj4jqr7jvg5q2qvpg-5000.app.github.dev/uploads/{filename}"
+        file_url = f"https://fuzzy-space-giggle-pjw99rqj6ww5hgrg-5000.app.github.dev/uploads/{filename}"
 
         return jsonify({"message": "File uploaded successfully", "file_url": file_url}), 201
 
